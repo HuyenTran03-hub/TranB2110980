@@ -1,0 +1,269 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #080808;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ed7ab0;
+    padding: 15px 0;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-links li a:hover {
+    color: #9a8e95;
+}
+
+/* About section */
+.about {
+    padding: 100px 0;
+}
+
+.about .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Hobbies section */
+.hobbies {
+    padding: 50px 0; /* Điều chỉnh padding giống phần Projects */
+    background-color: #f6cbe3; /* Đặt nền trắng giống phần Projects */
+}
+
+.hobbies .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Đảm bảo hiển thị đẹp trên nhiều kích thước màn hình */
+    gap: 20px; /* Khoảng cách giữa các mục giống phần Projects */
+}
+
+.hobby-item {
+    padding: 20px;
+    background-color: #fff; /* Đặt màu nền trắng cho các mục */
+    border-radius: 10px; /* Bo tròn giống phần Projects */
+    border: 1px solid #ddd; /* Viền mờ giống phần Projects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng giống phần Projects */
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.hobby-item:hover {
+    transform: translateY(-10px); /* Hiệu ứng hover giống phần Projects */
+}
+
+.hobby-item i {
+    font-size: 3rem; /* Kích thước biểu tượng lớn hơn một chút */
+    color: #f398c2; /* Màu sắc biểu tượng đồng bộ với màu chủ đạo */
+    margin-bottom: 15px; /* Khoảng cách giữa biểu tượng và tiêu đề */
+}
+
+.hobby-item h3 {
+    font-size: 1.5rem; /* Kích thước tiêu đề */
+    margin-bottom: 10px;
+    color: #333; /* Màu sắc tiêu đề */
+}
+
+.hobby-item p {
+    font-size: 1rem;
+    color: #555; /* Màu sắc nội dung văn bản */
+}
+/* Certificates section */
+.certificates {
+    padding: 100px 0;
+    background-color: #f4f4f4;
+}
+
+.certificates h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.certificates .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Chia làm 2 cột */
+    gap: 40px;
+    text-align: center;
+}
+
+.certificate-item {
+background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.certificate-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-item i {
+    font-size: 2.5rem;
+    color: #f398c2; /* Màu hồng nhạt tương tự các phần khác */
+    margin-bottom: 15px;
+}
+
+.certificate-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.certificate-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .certificates .grid {
+        grid-template-columns: 1fr; /* Stack các mục theo chiều dọc trên màn hình nhỏ */
+    }
+}
+
+/* Contact section */
+.contact {
+    padding: 50px 0;
+    background-color: #f6cbe3;
+    color: #000000;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #9a8e95;
+}
+
+/* Footer */
+footer {
+    background-color: #f185b7;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+/* About section */
+.about {
+    padding: 100px 0;
+}
+
+.about .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-img img {
+    width: 150px; /* Kích thước nhỏ hơn */
+    height: 150px; /* Đảm bảo hình vuông */
+    border-radius: 50%; /* Tạo khung tròn */
+    border: 3px solid #333; /* Tùy chọn thêm viền */
+    object-fit: cover; /* Đảm bảo ảnh vừa với khung */
+    margin-bottom: 20px; /* Khoảng cách giữa ảnh và thông tin cá nhân */
+}
+
+/* About details styling */
+.about-details {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.about-details li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.about-info {
+    text-align: center; /* Đưa ảnh và thông tin cá nhân vào giữa */
+}
+
+.about-info-text {
+    padding-left: 20px;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .about .grid {
+        grid-template-columns: 1fr; /* Stack vertically on smaller screens */
+    }
+
+    .about-info-text {
+        padding-left: 0;
+    }
+}
+/* Hiệu ứng cho các phần tử khi cuộn */
+section {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+section.show {
+    opacity: 1;
+}
